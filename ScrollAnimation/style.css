@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 1px lightcoral; 
+}
+
+body{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column ;
+    
+
+}
+
+.box{
+    background-color: cornflowerblue;
+    height: 200px;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    border-radius: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    box-shadow: 10px 10px 10px lightcoral;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+    
+}
+
+.box.show{
+    transform: translateX(0);
+}
